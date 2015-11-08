@@ -15,7 +15,8 @@
                :prove)
   :components ((:module "t"
                 :components
-                ((:test-file "try-clci"))))
+                ((:test-file "sample")
+                 (:test-file "try-clci"))))
   :description "Test system for try-clci"
 
   :defsystem-depends-on (:prove-asdf)

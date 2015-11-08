@@ -18,8 +18,10 @@
   :license ""
   :depends-on ()
   :components ((:module "src"
+                :serial t
                 :components
-                ((:file "try-clci"))))
+                ((:file "sample")
+                 (:file "try-clci"))))
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames

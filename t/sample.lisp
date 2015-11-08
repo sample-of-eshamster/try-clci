@@ -1,22 +1,17 @@
 (in-package :cl-user)
 (defpackage try-clci-test
   (:use :cl
-        :try-clci
+        :try-clci.sample
         :prove))
 (in-package :try-clci-test)
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :try-clci)' in your Lisp.
 
-(plan 2)
+(plan 1)
 
 (subtest
     "Test add"
-  (is (add 10 20) 30)
-  (is (add 10 10) 20))
-
-(subtest
-    "Test add2"
-  (is (add 10 20) 30)
-  (is (add 10 10) 20))
+  (is (add-sample 10 20) 30)
+  (is (add-sample 10 10) 20))
 
 (finalize)
