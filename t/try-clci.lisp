@@ -12,6 +12,12 @@
 (subtest
     "Test add"
   (is (add 10 20) 30)
+  (is (add 10 10) 10) ; wrong test
+  )
+
+(subtest
+    "Test add2"
+  (is (add 10 20) 30)
   (is (add 10 10) 20))
 
 (finalize)
