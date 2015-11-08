@@ -1,3 +1,5 @@
+![Build Status](https://circleci.com/gh/sample-of-eshamster/try-clci.png?style=shield)
+
 # Try-Clci
 
 ## Usage
