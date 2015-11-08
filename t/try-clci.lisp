@@ -7,8 +7,11 @@
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :try-clci)' in your Lisp.
 
-(plan nil)
+(plan 1)
 
-;; blah blah blah.
+(subtest
+    "Test add"
+  (is (add 10 20) 30)
+  (is (add 10 10) 20))
 
 (finalize)

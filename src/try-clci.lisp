@@ -1,6 +1,8 @@
 (in-package :cl-user)
 (defpackage try-clci
-  (:use :cl))
+  (:use :cl)
+  (:export :add))
 (in-package :try-clci)
 
-;; blah blah blah.
+(defun add (x y)
+  (+ x y))
