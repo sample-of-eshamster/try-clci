@@ -9,7 +9,7 @@ res=0
 for target in ${targets[@]}; do
     ros use ${target}
     ros run -- --version
-    run-prove *.asd
+    run-prove *-test.asd
 
     temp=$?
     if [ ${temp} -ne 0 ]; then

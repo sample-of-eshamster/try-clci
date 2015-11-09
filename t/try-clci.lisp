@@ -7,7 +7,7 @@
 
 ;; NOTE: To run this test file, execute `(asdf:test-system :try-clci)' in your Lisp.
 
-(plan 3)
+(plan 2)
 
 (subtest
     "Test add"
@@ -18,9 +18,5 @@
     "Test add2"
   (is (add 10 20) 30)
   (is (add 10 10) 20))
-
-(subtest
-    "Test that is passed only in ccl"
-  (ok (ccl:function-name #'car)))
 
 (finalize)
